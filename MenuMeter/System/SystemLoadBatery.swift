@@ -20,7 +20,7 @@ final class SystemLoadBatery: ObservableObject {
                 if let currentCapacity = info?[kIOPSCurrentCapacityKey] as? Int,
                    let maxCapacity = info?[kIOPSMaxCapacityKey] as? Int {
                     let percentage = (Double(currentCapacity) / Double(maxCapacity)) * 1 // colocar - 0.20 para testar
-                    print(percentage)
+                   // print(percentage)
                     return percentage
                     
                 }

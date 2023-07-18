@@ -19,7 +19,7 @@ final class SystemLoadDisk: ObservableObject {
                     let totalDiskSpaceInBytes = totalSize.int64Value
                     
                     let freeDiskSpaceInPercentage = (Double(freeDiskSpaceInBytes) / Double(totalDiskSpaceInBytes))
-                   print(freeDiskSpaceInPercentage)
+                  // print(freeDiskSpaceInPercentage)
                     return freeDiskSpaceInPercentage
                 }
             } catch {

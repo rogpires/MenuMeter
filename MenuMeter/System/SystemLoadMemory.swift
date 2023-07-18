@@ -22,7 +22,7 @@ final class SystemLoadMemory: ObservableObject {
         let bytes = Double(info.resident_size)
         let totalBytes = Double(ProcessInfo.processInfo.physicalMemory)
         let percentage = bytes / totalBytes * 100
-        print(percentage)
+        //print(percentage)
         return percentage
     }
     
