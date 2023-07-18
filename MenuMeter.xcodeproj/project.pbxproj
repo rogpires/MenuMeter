@@ -11,6 +11,19 @@
 		032524B92A66085800B70F18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524B82A66085800B70F18 /* ContentView.swift */; };
 		032524BB2A66085900B70F18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032524BA2A66085900B70F18 /* Assets.xcassets */; };
 		032524BE2A66085900B70F18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032524BD2A66085900B70F18 /* Preview Assets.xcassets */; };
+		032524CA2A660A7F00B70F18 /* SystemLoadMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524C92A660A7F00B70F18 /* SystemLoadMonitor.swift */; };
+		032524CC2A660AAF00B70F18 /* SystemLoadMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524CB2A660AAF00B70F18 /* SystemLoadMemory.swift */; };
+		032524CE2A660ACF00B70F18 /* SystemLoadDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524CD2A660ACF00B70F18 /* SystemLoadDisk.swift */; };
+		032524D02A660AE900B70F18 /* SystemLoadBatery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524CF2A660AE900B70F18 /* SystemLoadBatery.swift */; };
+		032524D22A660B1400B70F18 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524D12A660B1400B70F18 /* StatusBarController.swift */; };
+		032524D42A660B3F00B70F18 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524D32A660B3F00B70F18 /* ViewModel.swift */; };
+		032524D62A660BAA00B70F18 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524D52A660BAA00B70F18 /* PreferencesView.swift */; };
+		032524D82A660BCB00B70F18 /* BateryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524D72A660BCB00B70F18 /* BateryView.swift */; };
+		032524DA2A660BE700B70F18 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524D92A660BE700B70F18 /* CircleView.swift */; };
+		032524DC2A660C0100B70F18 /* CircleViewCpu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524DB2A660C0100B70F18 /* CircleViewCpu.swift */; };
+		032524DE2A660C1F00B70F18 /* CircleViewMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */; };
+		032524E02A660C3700B70F18 /* CircleViewDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524DF2A660C3700B70F18 /* CircleViewDisk.swift */; };
+		032524E22A660C5500B70F18 /* CircleViewBatery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524E12A660C5500B70F18 /* CircleViewBatery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +33,19 @@
 		032524BA2A66085900B70F18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		032524BD2A66085900B70F18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		032524BF2A66085900B70F18 /* MenuMeter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MenuMeter.entitlements; sourceTree = "<group>"; };
+		032524C92A660A7F00B70F18 /* SystemLoadMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLoadMonitor.swift; sourceTree = "<group>"; };
+		032524CB2A660AAF00B70F18 /* SystemLoadMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLoadMemory.swift; sourceTree = "<group>"; };
+		032524CD2A660ACF00B70F18 /* SystemLoadDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLoadDisk.swift; sourceTree = "<group>"; };
+		032524CF2A660AE900B70F18 /* SystemLoadBatery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLoadBatery.swift; sourceTree = "<group>"; };
+		032524D12A660B1400B70F18 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		032524D32A660B3F00B70F18 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		032524D52A660BAA00B70F18 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		032524D72A660BCB00B70F18 /* BateryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BateryView.swift; sourceTree = "<group>"; };
+		032524D92A660BE700B70F18 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		032524DB2A660C0100B70F18 /* CircleViewCpu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewCpu.swift; sourceTree = "<group>"; };
+		032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewMemory.swift; sourceTree = "<group>"; };
+		032524DF2A660C3700B70F18 /* CircleViewDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewDisk.swift; sourceTree = "<group>"; };
+		032524E12A660C5500B70F18 /* CircleViewBatery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewBatery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				032524B62A66085800B70F18 /* MenuMeterApp.swift */,
-				032524B82A66085800B70F18 /* ContentView.swift */,
+				032524C52A6609FD00B70F18 /* System */,
+				032524C62A660A0C00B70F18 /* Model */,
+				032524C82A660A1F00B70F18 /* View */,
+				032524C72A660A1400B70F18 /* ViewModel */,
 				032524BA2A66085900B70F18 /* Assets.xcassets */,
 				032524BF2A66085900B70F18 /* MenuMeter.entitlements */,
 				032524BC2A66085900B70F18 /* Preview Content */,
@@ -67,6 +96,48 @@
 				032524BD2A66085900B70F18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		032524C52A6609FD00B70F18 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				032524C92A660A7F00B70F18 /* SystemLoadMonitor.swift */,
+				032524CB2A660AAF00B70F18 /* SystemLoadMemory.swift */,
+				032524CD2A660ACF00B70F18 /* SystemLoadDisk.swift */,
+				032524CF2A660AE900B70F18 /* SystemLoadBatery.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		032524C62A660A0C00B70F18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				032524D12A660B1400B70F18 /* StatusBarController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		032524C72A660A1400B70F18 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				032524D32A660B3F00B70F18 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		032524C82A660A1F00B70F18 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				032524B82A66085800B70F18 /* ContentView.swift */,
+				032524D52A660BAA00B70F18 /* PreferencesView.swift */,
+				032524D72A660BCB00B70F18 /* BateryView.swift */,
+				032524D92A660BE700B70F18 /* CircleView.swift */,
+				032524DB2A660C0100B70F18 /* CircleViewCpu.swift */,
+				032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */,
+				032524DF2A660C3700B70F18 /* CircleViewDisk.swift */,
+				032524E12A660C5500B70F18 /* CircleViewBatery.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +210,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032524CE2A660ACF00B70F18 /* SystemLoadDisk.swift in Sources */,
+				032524D22A660B1400B70F18 /* StatusBarController.swift in Sources */,
 				032524B92A66085800B70F18 /* ContentView.swift in Sources */,
+				032524E22A660C5500B70F18 /* CircleViewBatery.swift in Sources */,
+				032524D82A660BCB00B70F18 /* BateryView.swift in Sources */,
+				032524CA2A660A7F00B70F18 /* SystemLoadMonitor.swift in Sources */,
+				032524E02A660C3700B70F18 /* CircleViewDisk.swift in Sources */,
+				032524D62A660BAA00B70F18 /* PreferencesView.swift in Sources */,
+				032524DA2A660BE700B70F18 /* CircleView.swift in Sources */,
+				032524DC2A660C0100B70F18 /* CircleViewCpu.swift in Sources */,
 				032524B72A66085800B70F18 /* MenuMeterApp.swift in Sources */,
+				032524DE2A660C1F00B70F18 /* CircleViewMemory.swift in Sources */,
+				032524CC2A660AAF00B70F18 /* SystemLoadMemory.swift in Sources */,
+				032524D42A660B3F00B70F18 /* ViewModel.swift in Sources */,
+				032524D02A660AE900B70F18 /* SystemLoadBatery.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
