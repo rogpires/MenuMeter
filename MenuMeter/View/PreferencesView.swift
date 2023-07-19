@@ -14,7 +14,7 @@ struct PreferencesView: View {
                 Spacer()
                 Text("Copyright @2023 - Rogerio Pires")
                 Text("https://bento.me/rogeriopires")
-                Text("Version 1.0.0")
+                Text("Version 1.0.4")
             }
             .font(.caption)
             .padding()
