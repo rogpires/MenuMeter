@@ -35,7 +35,7 @@ struct ContentView: View {
                     //MARK: -- Create ProgressRigBatery
                     VStack{
                         ZStack {
-                            CircleViewBatery(hardware: "BATERY", systemName: "battery.0", percent: "90%", progress4: 1.0)
+                            CircleViewBatery(hardware: "BATTERY", systemName: "battery.0", percent: "90%", progress4: 1.0)
                         }
                     }
                     
@@ -82,7 +82,7 @@ struct ContentView: View {
                     Text("Preferences")
                 }
                 .buttonStyle(.plain)
-                .opacity(0.6)
+                .opacity(0.8)
                // .padding(.leading, 10)
                 .popover(isPresented: $isShowPreferences) {
                     PreferencesView()
@@ -97,7 +97,7 @@ struct ContentView: View {
                     Text("Quit")
                 }
                 .buttonStyle(.plain)
-                .opacity(0.6)
+                .opacity(0.8)
               //  .padding(.trailing, 10)
             }
         }
