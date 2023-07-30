@@ -17,6 +17,7 @@ struct ContentView: View {
     @StateObject private var progressMemory = SystemLoadMemory()
     @StateObject private var progressDisk = SystemLoadDisk()
     @StateObject private var progressBatery = SystemLoadBatery()
+    @StateObject private var progressTemp = SystemLoadTemp()
     @State private var isShowPreferences: Bool = false
     var progress0 = 0.0
     var progress1 = 0.0
@@ -28,7 +29,7 @@ struct ContentView: View {
     
     var body: some View {
 
-        VStack(alignment: .trailing) {
+        VStack {
             ZStack {
                 HStack {
                     
@@ -62,7 +63,7 @@ struct ContentView: View {
                     }
                     
                 }
-            }
+            }//.padding()
             
             //MARK: -- Line
             Rectangle()
@@ -79,7 +80,7 @@ struct ContentView: View {
                  //   Image(systemName: "gear")
                   //  Image(systemName: "slider.vertical.3")
                       //  .font(.system(size: 20))
-                    Text("Preferences")
+                    Text("About")
                 }
                 .buttonStyle(.plain)
                 .opacity(0.8)
@@ -88,6 +89,8 @@ struct ContentView: View {
                     PreferencesView()
                 }
                 Spacer()
+                
+             //  Text("\(progressTemp.getCPUtemperature())")
                 
                 Button(action: {
                     NSApplication.shared.terminate(self)
@@ -101,9 +104,9 @@ struct ContentView: View {
               //  .padding(.trailing, 10)
             }
         }
-        .frame(width: 400, height: 140) //usar 300 por 160 para 3 relogios
-        .padding(14)
-        .background(.thinMaterial)
+        .frame(width: 280, height: 120) //usar 300 por 160 para 3 relogios
+        .padding(10)
+     //   .background(.thinMaterial)
     }
 }
 

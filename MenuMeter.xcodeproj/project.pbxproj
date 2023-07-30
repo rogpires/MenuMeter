@@ -24,6 +24,7 @@
 		032524DE2A660C1F00B70F18 /* CircleViewMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */; };
 		032524E02A660C3700B70F18 /* CircleViewDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524DF2A660C3700B70F18 /* CircleViewDisk.swift */; };
 		032524E22A660C5500B70F18 /* CircleViewBatery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524E12A660C5500B70F18 /* CircleViewBatery.swift */; };
+		035CFE2A2A6A09F800A2C506 /* SystemLoadTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035CFE292A6A09F800A2C506 /* SystemLoadTemp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewMemory.swift; sourceTree = "<group>"; };
 		032524DF2A660C3700B70F18 /* CircleViewDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewDisk.swift; sourceTree = "<group>"; };
 		032524E12A660C5500B70F18 /* CircleViewBatery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewBatery.swift; sourceTree = "<group>"; };
+		035CFE292A6A09F800A2C506 /* SystemLoadTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLoadTemp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				032524CB2A660AAF00B70F18 /* SystemLoadMemory.swift */,
 				032524CD2A660ACF00B70F18 /* SystemLoadDisk.swift */,
 				032524CF2A660AE900B70F18 /* SystemLoadBatery.swift */,
+				035CFE292A6A09F800A2C506 /* SystemLoadTemp.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -132,10 +135,10 @@
 				032524D52A660BAA00B70F18 /* PreferencesView.swift */,
 				032524D72A660BCB00B70F18 /* BateryView.swift */,
 				032524D92A660BE700B70F18 /* CircleView.swift */,
+				032524E12A660C5500B70F18 /* CircleViewBatery.swift */,
 				032524DB2A660C0100B70F18 /* CircleViewCpu.swift */,
 				032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */,
 				032524DF2A660C3700B70F18 /* CircleViewDisk.swift */,
-				032524E12A660C5500B70F18 /* CircleViewBatery.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				032524D62A660BAA00B70F18 /* PreferencesView.swift in Sources */,
 				032524DA2A660BE700B70F18 /* CircleView.swift in Sources */,
 				032524DC2A660C0100B70F18 /* CircleViewCpu.swift in Sources */,
+				035CFE2A2A6A09F800A2C506 /* SystemLoadTemp.swift in Sources */,
 				032524B72A66085800B70F18 /* MenuMeterApp.swift in Sources */,
 				032524DE2A660C1F00B70F18 /* CircleViewMemory.swift in Sources */,
 				032524CC2A660AAF00B70F18 /* SystemLoadMemory.swift in Sources */,

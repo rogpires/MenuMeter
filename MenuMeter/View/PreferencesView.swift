@@ -12,6 +12,8 @@ struct PreferencesView: View {
         ZStack {
             VStack {
                 Spacer()
+                Text("MenuMeter")
+                    .font(.title3)
                 Text("Copyright @2023 - Rogerio Pires")
                 Text("https://bento.me/rogeriopires")
                 Text("Version 1.0.4")

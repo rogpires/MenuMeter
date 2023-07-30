@@ -22,25 +22,25 @@ struct CircleViewBatery: View {
         VStack{
             ZStack {
                 Circle()
-                    .stroke(lineWidth: 6)
-                    .foregroundColor(.black)
-                    .opacity(0.1)
-                    .padding(10)
+                    .stroke(lineWidth: 5)
+                    .background(.thinMaterial)
+                    .opacity(0.2)
+            //        .padding(10)
                 
                 Circle()
                     .trim(from:0.0, to: min(progress4, Double(progressBatery.getBatteryPercentage()!)))
-                    .stroke(AngularGradient(gradient: Gradient(colors: [Color(color1), Color(color2), Color(color3)]), center: .center), style: StrokeStyle(lineWidth: 6 , lineCap: .round, lineJoin: .round))
+                    .stroke(AngularGradient(gradient: Gradient(colors: [Color(color1), Color(color2), Color(color3)]), center: .center), style: StrokeStyle(lineWidth: 5 , lineCap: .round, lineJoin: .round))
                     .rotationEffect(Angle(degrees: 270))
                     .animation(.easeInOut(duration: 1.0), value: progress4)
-                    .padding(10)
+             //       .padding(10)
                 
                 VStack(spacing: 30){
                     VStack(spacing: 3){
                         Image(systemName: systemName)
                             .opacity(0.7)
-                            .font(.system(size: 20))
+                            .font(.system(size: 16))
                         Text(hardware)
-                            .font(.system(size: 10))
+                            .font(.system(size: 08))
                     }
                 }
             }

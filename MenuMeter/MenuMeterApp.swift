@@ -14,7 +14,7 @@ struct MenuMeterApp: App {
             ZStack {
                 ContentView(vm: ViewModel())
             }
-            .frame(width: 420, height: 160)
+        //    .frame(width: 420, height: 160)
             .background(.thinMaterial)
         }.menuBarExtraStyle(.window)
     }
