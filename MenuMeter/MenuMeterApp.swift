@@ -15,7 +15,7 @@ struct MenuMeterApp: App {
                 ContentView(vm: ViewModel())
             }
         //    .frame(width: 420, height: 160)
-            .background(.thinMaterial)
+         //   .background(.thinMaterial)
         }.menuBarExtraStyle(.window)
     }
 }

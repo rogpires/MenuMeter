@@ -23,7 +23,7 @@ struct CircleViewMemory: View {
             ZStack {
                 Circle()
                     .stroke(lineWidth: 5)
-                    .background(.thinMaterial)
+                  //  .background(.thinMaterial)
                     .opacity(0.2)
                //     .padding(10)
                 

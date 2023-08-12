@@ -68,8 +68,8 @@ struct ContentView: View {
             //MARK: -- Line
             Rectangle()
                 .frame(height: 1)
-                .foregroundColor(.gray)
-                .opacity(0.3)
+                .foregroundColor(.black)
+                .opacity(0.2)
                 .padding(6)
             
             //MARK: -- Create Button Quit and Preferences
