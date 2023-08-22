@@ -10,12 +10,11 @@ import SwiftUI
 @main
 struct MenuMeterApp: App {
     var body: some Scene {
-        MenuBarExtra("MenuMeter", systemImage: "cpu") {
+        MenuBarExtra("MenuMeter", image: "vu") {
             ZStack {
                 ContentView(vm: ViewModel())
             }
-        //    .frame(width: 420, height: 160)
-         //   .background(.thinMaterial)
-        }.menuBarExtraStyle(.window)
+        }
+        .menuBarExtraStyle(.window)
     }
 }

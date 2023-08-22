@@ -23,16 +23,13 @@ struct CircleViewBatery: View {
             ZStack {
                 Circle()
                     .stroke(lineWidth: 5)
-                //    .background(.thinMaterial)
                     .opacity(0.2)
-            //        .padding(10)
                 
                 Circle()
                     .trim(from:0.0, to: min(progress4, Double(progressBatery.getBatteryPercentage()!)))
                     .stroke(AngularGradient(gradient: Gradient(colors: [Color(color1), Color(color2), Color(color3)]), center: .center), style: StrokeStyle(lineWidth: 5 , lineCap: .round, lineJoin: .round))
                     .rotationEffect(Angle(degrees: 270))
                     .animation(.easeInOut(duration: 1.0), value: progress4)
-             //       .padding(10)
                 
                 VStack(spacing: 30){
                     VStack(spacing: 3){

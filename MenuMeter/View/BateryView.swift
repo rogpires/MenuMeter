@@ -13,14 +13,13 @@ struct BateryView: View {
     let fill: Color
     let outline: Color
     @State private var opacity = 0.0
-        
+    
     var body: some View {
         ZStack {
             Image(systemName: "battery.0")
                 .resizable()
                 .scaledToFit()
                 .font(.headline.weight(.ultraLight))
-                //.foregroundColor(outline)
                 .background(
                     Rectangle()
                         .fill(fill)
@@ -36,11 +35,8 @@ struct BateryView: View {
                 .padding()
             
             Text("\(Int(self.progress * 100))%")
-               // .foregroundColor(.white)
                 .animation(nil)
                 .opacity(opacity)
-              //  .foregroundColor(.black)
-            
         }
         .task {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {

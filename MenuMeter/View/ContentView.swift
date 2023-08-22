@@ -28,7 +28,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-
+        
         VStack {
             ZStack {
                 HStack {
@@ -61,9 +61,9 @@ struct ContentView: View {
                             CircleViewDisk(hardware: "DISK", systemName: "internaldrive", percent: "40%", progress2: 1.0)
                         }
                     }
-                    
                 }
-            }//.padding()
+                
+            }
             
             //MARK: -- Line
             Rectangle()
@@ -77,36 +77,27 @@ struct ContentView: View {
                 Button(action: {
                     isShowPreferences = true
                 }) {
-                 //   Image(systemName: "gear")
-                  //  Image(systemName: "slider.vertical.3")
-                      //  .font(.system(size: 20))
                     Text("About")
                 }
                 .buttonStyle(.plain)
                 .opacity(0.8)
-               // .padding(.leading, 10)
                 .popover(isPresented: $isShowPreferences) {
                     PreferencesView()
                 }
-                Spacer()
                 
-             //  Text("\(progressTemp.getCPUtemperature())")
+                Spacer()
                 
                 Button(action: {
                     NSApplication.shared.terminate(self)
                 }) {
-                 //   Image(systemName: "xmark.circle")
-                      // .font(.system(size: 20))
                     Text("Quit")
                 }
                 .buttonStyle(.plain)
                 .opacity(0.8)
-              //  .padding(.trailing, 10)
             }
         }
-        .frame(width: 280, height: 120) //usar 300 por 160 para 3 relogios
+        .frame(width: 280, height: 120)
         .padding(10)
-     //   .background(.thinMaterial)
     }
 }
 

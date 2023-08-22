@@ -23,16 +23,13 @@ struct CircleViewMemory: View {
             ZStack {
                 Circle()
                     .stroke(lineWidth: 5)
-                  //  .background(.thinMaterial)
                     .opacity(0.2)
-               //     .padding(10)
                 
                 Circle()
                     .trim(from:0.0, to: min(progress1, Double(progressMemory.getMemoryUsage()!)))
                     .stroke(AngularGradient(gradient: Gradient(colors: [Color(color1), Color(color2), Color(color3)]), center: .center), style: StrokeStyle(lineWidth: 5 , lineCap: .round, lineJoin: .round))
                     .rotationEffect(Angle(degrees: 270))
                     .animation(.easeInOut(duration: 1.0), value: progress1)
-                 //   .padding(10)
                 
                 VStack(spacing: 30){
                     VStack(spacing: 3){
@@ -50,7 +47,7 @@ struct CircleViewMemory: View {
             
             //old
             //Text("\(formatNumber(Double(progressMemory.getMemoryUsage()!)))")
-  
+            
         }
     }
 }

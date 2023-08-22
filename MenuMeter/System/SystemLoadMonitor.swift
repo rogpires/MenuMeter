@@ -6,7 +6,7 @@
 //
 
 
-#if !arch(x86_64)
+//#if !arch(x86_64)
 import Foundation
 import os.log
 
@@ -103,4 +103,4 @@ final class SystemLoadMonitor: ObservableObject {
         }
     }
 }
-#endif
+//#endif
