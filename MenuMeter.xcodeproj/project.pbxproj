@@ -24,6 +24,7 @@
 		032524DE2A660C1F00B70F18 /* CircleViewMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */; };
 		032524E02A660C3700B70F18 /* CircleViewDisk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524DF2A660C3700B70F18 /* CircleViewDisk.swift */; };
 		032524E22A660C5500B70F18 /* CircleViewBatery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032524E12A660C5500B70F18 /* CircleViewBatery.swift */; };
+		035748E32A957CFC0041367A /* BTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035748E22A957CFC0041367A /* BTView.swift */; };
 		035CFE2A2A6A09F800A2C506 /* SystemLoadTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035CFE292A6A09F800A2C506 /* SystemLoadTemp.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewMemory.swift; sourceTree = "<group>"; };
 		032524DF2A660C3700B70F18 /* CircleViewDisk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewDisk.swift; sourceTree = "<group>"; };
 		032524E12A660C5500B70F18 /* CircleViewBatery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewBatery.swift; sourceTree = "<group>"; };
+		035748E22A957CFC0041367A /* BTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTView.swift; sourceTree = "<group>"; };
 		035CFE292A6A09F800A2C506 /* SystemLoadTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLoadTemp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				032524DB2A660C0100B70F18 /* CircleViewCpu.swift */,
 				032524DD2A660C1F00B70F18 /* CircleViewMemory.swift */,
 				032524DF2A660C3700B70F18 /* CircleViewDisk.swift */,
+				035748E22A957CFC0041367A /* BTView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035748E32A957CFC0041367A /* BTView.swift in Sources */,
 				032524CE2A660ACF00B70F18 /* SystemLoadDisk.swift in Sources */,
 				032524D22A660B1400B70F18 /* StatusBarController.swift in Sources */,
 				032524B92A66085800B70F18 /* ContentView.swift in Sources */,
