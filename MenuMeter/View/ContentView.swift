@@ -30,45 +30,42 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-            ZStack {
-                HStack {
-                    
-                    //MARK: -- Create ProgressRigBatery
-                    VStack{
-                        ZStack {
-                            CircleViewBatery(hardware: "BATTERY", systemName: "battery.0", percent: "90%", progress4: 1.0)
-                        }
-                    }
-                    
-                    //MARK: -- Create ProgressRigCPU
-                    VStack{
-                        ZStack {
-                            CircleViewCpu(hardware: "CPU", systemName: "cpu", percent: "90%", progress0: 1.0)
-                        }
-                    }
-                    
-                    //MARK: -- Create ProgressRigMEM
-                    VStack {
-                        ZStack {
-                            //    Text("Memory usage: \(getMemoryUsage() ?? 0) bytes")
-                            CircleViewMemory(hardware: "MEM", systemName: "memorychip", percent: "60%", progress1: 1.0)
-                        }
-                    }
-                    
-                    //MARK: -- Create ProgressRigDISK
-                    VStack {
-                        ZStack {
-                            CircleViewDisk(hardware: "DISK", systemName: "internaldrive", percent: "40%", progress2: 1.0)
-                        }
-                    }
+            
+            HStack {
+                
+                //MARK: -- Create ProgressRigBatery
+                VStack{
+                    CircleViewBatery(hardware: "BATTERY", systemName: "battery.0", percent: "90%", progress4: 1.0)
                 }
+                .frame(width: 60, height: 60)
+                Spacer()
+                
+                //MARK: -- Create ProgressRigCPU
+                VStack{
+                    CircleViewCpu(hardware: "CPU", systemName: "cpu", percent: "90%", progress0: 1.0)
+                }
+                .frame(width: 60, height: 60)
+                Spacer()
+                
+                //MARK: -- Create ProgressRigMEM
+                VStack {
+                    //    Text("Memory usage: \(getMemoryUsage() ?? 0) bytes")
+                    CircleViewMemory(hardware: "MEM", systemName: "memorychip", percent: "60%", progress1: 1.0)
+                }
+                .frame(width: 60, height: 60)
+                Spacer()
+                
+                //MARK: -- Create ProgressRigDISK
+                VStack {
+                    CircleViewDisk(hardware: "DISK", systemName: "internaldrive", percent: "40%", progress2: 1.0)
+                }
+                .frame(width: 60, height: 60)
                 
             }
             
             //MARK: -- Line
             Rectangle()
                 .frame(height: 1)
-                .foregroundColor(.black)
                 .opacity(0.2)
                 .padding(6)
             
@@ -96,8 +93,8 @@ struct ContentView: View {
                 .opacity(0.8)
             }
         }
-        .frame(width: 280, height: 120)
-        .padding(10)
+        .frame(width: 280, height: 100)
+        .padding()
     }
 }
 
