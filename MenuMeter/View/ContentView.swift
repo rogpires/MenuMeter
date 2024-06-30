@@ -96,6 +96,23 @@ struct ContentView: View {
         .frame(width: 280, height: 100)
         .padding()
     }
+    
+    private func creatWindow() -> NSWindow {
+        let controller = NSHostingController(rootView: PreferencesView())
+        
+        let window = NSWindow(
+            contentRect: NSRect(
+                x: 300, y:300, width: 500, height: 500
+            ),
+            styleMask: [.closable, .titled],
+            backing: .buffered,
+            defer: false
+            )
+        window.title = "Test"
+        window.isReleasedWhenClosed = false
+        window.contentViewController = controller
+        return window;
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
